@@ -36,6 +36,7 @@ The recommended launch path is low-out-of-pocket and local-first:
 See `docs/launch-plan.md` for the execution path.
 See `docs/layered-evidence-model.md` for the timing and biomarker policy.
 See `docs/compliance-boundary.md` for the minimum-disclosure and existing-subscriptions policy.
+See `docs/goal-routing.md` for the bounded execution policy.
 
 ## What This Repo Contains
 
@@ -44,6 +45,7 @@ See `docs/compliance-boundary.md` for the minimum-disclosure and existing-subscr
 - `logs-evidence/`: sample session logs, redacted revenue proof, metrics summary
 - `architecture/`: public system overview
 - `docs/`: launch, corpus-selection, and evidence-model notes for the public demo
+- `docs/`: launch, corpus-selection, evidence-model, and goal-routing notes for the public demo
 - `src/`: minimal provenance logging example
 - `demo-video/`: link and instructions for the public demo video
 
