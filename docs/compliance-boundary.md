@@ -29,6 +29,7 @@ Stay eligible for the XPRIZE while exposing the minimum possible amount of infor
 - Make the demo usable by judges.
 - Keep the public narrative focused on the wellness-safe `ATG Responder Coherence Operator`.
 - Include only the minimum evidence needed to show: working product, revenue, users, logs, API usage, and dashboard screenshots.
+- Keep any future SaMD or PCCP versioning in a separate private track, not the public submission.
 
 ## Safety Policy
 

@@ -12,6 +12,7 @@ Launch a contest-safe public demo and a sellable first-responder pilot with the 
 - Sell one paid pilot before overbuilding.
 - Use Google Cloud and Gemini only for the minimum deployed proof path.
 - Enforce hard budget gates, quota limits, and deny-by-default behavior.
+- Keep the current XPRIZE build in the wellness lane; move SaMD/PCCP work to a separate private roadmap later.
 
 ## Recommended Offer
 
@@ -79,6 +80,7 @@ Suggested pricing:
 - safety and privacy policy
 - layered evidence model policy
 - compliance boundary policy
+- regulatory roadmap note
 
 ## Immediate Next Step
 

@@ -21,6 +21,7 @@ Accept goals only if they support one of these outcomes:
 - revenue evidence
 - user evidence
 - safety and privacy compliance
+- future regulated-track planning, if and only if it remains private and out of the public repo
 
 ## Goal Decomposition
 
@@ -45,6 +46,7 @@ Stop the loop when:
 - the demo still works
 - the IP boundary is intact
 - the additional work would add cost or exposure without improving submission quality
+- the requested work would move the public demo into regulated clinical territory
 
 ## Result
 
