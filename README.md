@@ -35,6 +35,7 @@ The recommended launch path is low-out-of-pocket and local-first:
 
 See `docs/launch-plan.md` for the execution path.
 See `docs/layered-evidence-model.md` for the timing and biomarker policy.
+See `docs/compliance-boundary.md` for the minimum-disclosure and existing-subscriptions policy.
 
 ## What This Repo Contains
 

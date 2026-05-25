@@ -8,6 +8,7 @@ Launch a contest-safe public demo and a sellable first-responder pilot with the 
 
 - Build locally and in Workspace first.
 - Keep the public repo sanitized and contest-safe.
+- Use existing Google subscriptions and owned Google data before any new spend.
 - Sell one paid pilot before overbuilding.
 - Use Google Cloud and Gemini only for the minimum deployed proof path.
 - Enforce hard budget gates, quota limits, and deny-by-default behavior.
@@ -77,6 +78,7 @@ Suggested pricing:
 - revenue ledger
 - safety and privacy policy
 - layered evidence model policy
+- compliance boundary policy
 
 ## Immediate Next Step
 
