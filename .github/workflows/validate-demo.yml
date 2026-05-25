@@ -1,0 +1,25 @@
+name: validate-demo
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check README
+        run: test -f README.md
+      - name: Validate JSON
+        run: python3 - <<'PY'
+import json
+from pathlib import Path
+for path in [
+    Path("appsheet/appsheet-config.json"),
+    Path("gemini/api-call-example.json"),
+]:
+    json.loads(path.read_text())
+print("ok")
+PY
+

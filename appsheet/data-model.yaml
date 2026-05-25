@@ -1,0 +1,61 @@
+app:
+  name: Guardian Mosaic
+  mode: contest_demo
+
+tables:
+  - name: DailyCheckIn
+    primary_key: checkin_id
+    fields:
+      - name: checkin_id
+        type: text
+      - name: user_role
+        type: enum
+        values: [law_enforcement, fire, ems, dispatch, public_safety]
+      - name: mood_score
+        type: number
+      - name: sleep_hours
+        type: number
+      - name: stress_score
+        type: number
+      - name: notes
+        type: longtext
+
+  - name: SupportRecommendation
+    primary_key: recommendation_id
+    fields:
+      - name: recommendation_id
+        type: text
+      - name: checkin_id
+        type: text
+      - name: recommendation_text
+        type: longtext
+      - name: source
+        type: text
+      - name: created_at
+        type: datetime
+
+  - name: AgencyDashboardMetric
+    primary_key: metric_id
+    fields:
+      - name: metric_id
+        type: text
+      - name: agency_name
+        type: text
+      - name: sessions_completed
+        type: number
+      - name: active_users
+        type: number
+      - name: retention_rate
+        type: number
+      - name: created_at
+        type: datetime
+
+relationships:
+  - from: SupportRecommendation.checkin_id
+    to: DailyCheckIn.checkin_id
+
+privacy:
+  pii_removed: true
+  anonymized: true
+  contest_safe: true
+

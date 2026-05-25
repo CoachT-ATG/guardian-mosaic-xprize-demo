@@ -1,0 +1,21 @@
+{
+  "model": "gemini-1.5-pro",
+  "input": {
+    "role": "law_enforcement",
+    "mood_score": 6,
+    "sleep_hours": 5.5,
+    "stress_score": 8,
+    "notes": "Rough shift, short sleep, need to reset before next tour."
+  },
+  "response": {
+    "summary": "You had a demanding shift and low sleep, so the goal today is recovery, not optimization.",
+    "suggestion": "Take a 10-minute walk, hydrate, and plan a brief peer check-in before the next shift.",
+    "dashboard_note": "User shows elevated stress and short sleep; recommend recovery-focused support."
+  },
+  "redactions": {
+    "pii": true,
+    "secret_keys": true,
+    "private_telemetry": true
+  }
+}
+

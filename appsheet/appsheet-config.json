@@ -1,0 +1,45 @@
+{
+  "app_name": "Guardian Mosaic",
+  "mode": "contest_demo",
+  "description": "Public demo configuration for a first-responder wellness co-pilot.",
+  "data_sources": [
+    {
+      "name": "DailyCheckIn",
+      "type": "google_sheets",
+      "source": "sample-data/daily_checkin.csv"
+    },
+    {
+      "name": "AgencyDashboardMetrics",
+      "type": "google_sheets",
+      "source": "sample-data/agency_metrics.csv"
+    }
+  ],
+  "views": [
+    "Daily Check-In",
+    "Resilience Suggestions",
+    "Agency Dashboard",
+    "Metrics Summary"
+  ],
+  "workflows": [
+    {
+      "name": "daily_checkin",
+      "trigger": "scheduled_daily",
+      "actions": [
+        "collect_checkin",
+        "generate_gemini_summary",
+        "write_provenance_log"
+      ]
+    }
+  ],
+  "integrations": [
+    {
+      "provider": "Gemini",
+      "purpose": "Generate contest-safe recommendations"
+    },
+    {
+      "provider": "Google Workspace",
+      "purpose": "Store demo data and workflows"
+    }
+  ]
+}
+
