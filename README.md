@@ -34,6 +34,7 @@ The recommended launch path is low-out-of-pocket and local-first:
 - keep budgets, quotas, and feature scope hard-limited
 
 See `docs/launch-plan.md` for the execution path.
+See `docs/layered-evidence-model.md` for the timing and biomarker policy.
 
 ## What This Repo Contains
 
@@ -41,7 +42,7 @@ See `docs/launch-plan.md` for the execution path.
 - `gemini/`: sanitized prompt templates and sample API payloads
 - `logs-evidence/`: sample session logs, redacted revenue proof, metrics summary
 - `architecture/`: public system overview
-- `docs/`: launch and corpus-selection notes for the public demo
+- `docs/`: launch, corpus-selection, and evidence-model notes for the public demo
 - `src/`: minimal provenance logging example
 - `demo-video/`: link and instructions for the public demo video
 

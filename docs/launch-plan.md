@@ -63,6 +63,8 @@ Suggested pricing:
 - Do not assume cloud budgets are hard caps; they are alerts only
 - Keep API calls and deployment scope intentionally small
 - Do not use LLMs for sensitive health data or clinical claims
+- Keep WGS, routine labs, and methylation out of the public demo unless a separate research cohort is approved
+- Use biometrics and self-report as the default daily routing layer
 
 ## Evidence To Capture
 
@@ -74,6 +76,7 @@ Suggested pricing:
 - API usage record
 - revenue ledger
 - safety and privacy policy
+- layered evidence model policy
 
 ## Immediate Next Step
 
