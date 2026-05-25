@@ -41,6 +41,7 @@ See `docs/launch-plan.md` for the execution path.
 - `gemini/`: sanitized prompt templates and sample API payloads
 - `logs-evidence/`: sample session logs, redacted revenue proof, metrics summary
 - `architecture/`: public system overview
+- `docs/`: launch and corpus-selection notes for the public demo
 - `src/`: minimal provenance logging example
 - `demo-video/`: link and instructions for the public demo video
 
