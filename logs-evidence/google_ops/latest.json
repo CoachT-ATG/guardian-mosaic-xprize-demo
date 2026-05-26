@@ -1,0 +1,102 @@
+{
+  "agency_metrics": [
+    {
+      "active_users": "12",
+      "agency": "demo-agency-001",
+      "completed_checkins": "274",
+      "qualitative_outcome": "Users report easier shift transitions and better recovery habits.",
+      "retention_rate": "0.83"
+    },
+    {
+      "active_users": "8",
+      "agency": "demo-agency-002",
+      "completed_checkins": "141",
+      "qualitative_outcome": "Peer-support lead notes improved engagement with short daily prompts.",
+      "retention_rate": "0.76"
+    }
+  ],
+  "app_name": "Guardian Mosaic",
+  "beta_signup_count": 3,
+  "beta_signups": [
+    {
+      "beta_consent": "true",
+      "email": "demo1@example.com",
+      "lead_id": "beta-001",
+      "name": "Demo User One",
+      "notes": "Wants a 14-day beta and a department pilot if staff engagement is strong.",
+      "organization_type": "agency",
+      "pilot_interest": "true",
+      "role": "law_enforcement",
+      "source_channel": "linkedin"
+    },
+    {
+      "beta_consent": "true",
+      "email": "demo2@example.com",
+      "lead_id": "beta-002",
+      "name": "Demo User Two",
+      "notes": "Interested in stress and sleep support; may share with peers.",
+      "organization_type": "individual",
+      "pilot_interest": "false",
+      "role": "first_responder",
+      "source_channel": "linkedin"
+    },
+    {
+      "beta_consent": "true",
+      "email": "demo3@example.com",
+      "lead_id": "beta-003",
+      "name": "Demo User Three",
+      "notes": "Open to beta and wants a pilot summary to take to a wellness lead.",
+      "organization_type": "individual",
+      "pilot_interest": "true",
+      "role": "veteran",
+      "source_channel": "referral"
+    }
+  ],
+  "brief_count": 3,
+  "briefs": [
+    {
+      "dashboard_note": "Elevated stress and short sleep; recommend recovery-focused support.",
+      "role": "law_enforcement",
+      "status": "recovery_first",
+      "suggestion": "Take a 10-minute walk, hydrate, and plan a brief peer check-in.",
+      "summary": "The day is demanding; the goal is recovery, not optimization.",
+      "user_id": "demo-user-001"
+    },
+    {
+      "dashboard_note": "Stable state; light challenge is appropriate.",
+      "role": "fire_ems",
+      "status": "flow_ready",
+      "suggestion": "Do one focused work block, then stop and reset.",
+      "summary": "The current state supports a light flow block.",
+      "user_id": "demo-user-002"
+    },
+    {
+      "dashboard_note": "Elevated stress and short sleep; recommend recovery-focused support.",
+      "role": "dispatch",
+      "status": "recovery_first",
+      "suggestion": "Take a 10-minute walk, hydrate, and plan a brief peer check-in.",
+      "summary": "The day is demanding; the goal is recovery, not optimization.",
+      "user_id": "demo-user-003"
+    }
+  ],
+  "gemini_surface": {
+    "contest_safe_prompt_present": true,
+    "deployed_call_required_if_llm": true,
+    "sample_api_payload_present": true
+  },
+  "generated_at": "2026-05-26T21:40:09.388417+00:00",
+  "google_workspace_surface": {
+    "appsheet_config_present": true,
+    "demo_safe": true,
+    "sample_data_present": true
+  },
+  "mode": "local_first_workspace_mock",
+  "schema": "guardian_mosaic.google_ops.receipt.v1",
+  "source_files": {
+    "agency_metrics": "sample-data/agency_metrics.csv",
+    "appsheet_config": "appsheet/appsheet-config.json",
+    "beta_signups": "sample-data/beta_signups.csv",
+    "daily_checkin": "sample-data/daily_checkin.csv"
+  },
+  "status": "green"
+}

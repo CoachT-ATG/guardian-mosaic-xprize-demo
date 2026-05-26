@@ -22,4 +22,9 @@ for path in [
     json.loads(path.read_text())
 print("ok")
 PY
-
+      - name: Run Google ops demo
+        run: python3 scripts/google_ops_runner.py --no-write
+      - name: Enforce XPRIZE requirements
+        run: python3 scripts/xprize_requirements_guard.py
+      - name: Run Doc Strange adversarial loop
+        run: python3 scripts/doc_strange_adversarial_loop.py

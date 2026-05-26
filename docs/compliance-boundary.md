@@ -4,6 +4,12 @@
 
 Stay eligible for the XPRIZE while exposing the minimum possible amount of information and spending the minimum possible amount of money.
 
+## Fresh Start Rule
+
+- This repository is a fresh contest submission, not a wholesale publication of prior private work.
+- Any use of pre-existing work must be referenced explicitly in `docs/preexisting-work-disclosure.md`.
+- The public repo may describe prior work at a high level, but must not expose the detailed implementation.
+
 ## Cost Policy
 
 - Use existing Google Workspace subscriptions and existing owned Google data first.
@@ -23,6 +29,7 @@ Stay eligible for the XPRIZE while exposing the minimum possible amount of infor
 - Public repo contains only contest-required source, sanitized prompts, demo assets, logs, screenshots, and docs.
 - Do not publish proprietary methods, model weights, internal prompts, trade secrets, or patent-sensitive implementation details.
 - Do not publish credentials, API keys, or internal URLs.
+- Do not publish private source archives or private research notebooks.
 
 ## Submission Policy
 

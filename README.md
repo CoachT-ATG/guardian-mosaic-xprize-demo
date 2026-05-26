@@ -35,9 +35,21 @@ The recommended launch path is low-out-of-pocket and local-first:
 
 See `docs/launch-plan.md` for the execution path.
 See `docs/layered-evidence-model.md` for the timing and biomarker policy.
+See `docs/sensorium-interfaces.md` for the supported biometric device families, signal classes, and the trend-only rule.
+See `docs/grant-requirements-matrix.md` for the grant requirement ladder and the MVP feature set that exceeds it.
+See `docs/freemium-linkedin-gtm.md` for the iOS freemium and LinkedIn conversion strategy.
+See `docs/linkedin-launch-copy.md` for draft outbound posts only.
+See `docs/beta-to-pilot-pipeline.md` for the measurable signup-to-pilot funnel.
+See `docs/ios-beta-launch-checklist.md` for the required Apple / Google setup steps.
+See `docs/apple-launch-kit.md` for the official Apple pages and setup requirements.
+See `docs/apple-release-assets.md` for the App Store Connect and TestFlight metadata drafts.
+See `docs/xcode-project-setup.md` for the exact Xcode build and signing steps.
+See `ios/README.md` for the native SwiftUI scaffold.
 See `docs/compliance-boundary.md` for the minimum-disclosure and existing-subscriptions policy.
 See `docs/goal-routing.md` for the bounded execution policy.
 See `docs/regulatory-roadmap.md` for the public wellness track versus future regulated track split.
+See `docs/xprize-win-map.md` for the requirement-to-win mapping and freshness guard.
+See `docs/dogfood-strategy-loop.md` for the ideation / RO learning / QNPA / adversarial iteration loop.
 
 ## What This Repo Contains
 
@@ -45,9 +57,8 @@ See `docs/regulatory-roadmap.md` for the public wellness track versus future reg
 - `gemini/`: sanitized prompt templates and sample API payloads
 - `logs-evidence/`: sample session logs, redacted revenue proof, metrics summary
 - `architecture/`: public system overview
-- `docs/`: launch, corpus-selection, and evidence-model notes for the public demo
-- `docs/`: launch, corpus-selection, evidence-model, and goal-routing notes for the public demo
-- `docs/`: launch, corpus-selection, evidence-model, goal-routing, and regulatory-roadmap notes for the public demo
+- `docs/`: launch, corpus-selection, evidence-model, sensorium, goal-routing, regulatory-roadmap, and win-map notes for the public demo
+- `scripts/`: local receipt writers, adversarial analysis, and guardrails for the contest-safe proof path
 - `src/`: minimal provenance logging example
 - `demo-video/`: link and instructions for the public demo video
 
@@ -63,10 +74,12 @@ See `docs/regulatory-roadmap.md` for the public wellness track versus future reg
 
 1. Review `architecture/tech-stack.md`.
 2. Review `docs/launch-plan.md`.
-3. Load the AppSheet config from `appsheet/appsheet-config.json`.
-4. Use the prompt templates in `gemini/system-prompts/`.
-5. Replace placeholder sample files with redacted pilot artifacts.
-6. Publish the demo video link in `demo-video/README.md`.
+3. Open `index.html` or `app/index.html` to launch the local demo.
+4. Load the AppSheet config from `appsheet/appsheet-config.json`.
+5. Use the prompt templates in `gemini/system-prompts/`.
+6. Run `python3 scripts/google_ops_runner.py` to generate a local Google-ops receipt and demo-safe coherence briefs.
+7. Replace placeholder sample files with redacted pilot artifacts.
+8. Publish the demo video link in `demo-video/README.md`.
 
 ## Compliance Notes
 
@@ -76,6 +89,18 @@ See `docs/regulatory-roadmap.md` for the public wellness track versus future reg
 - No secret keys.
 - No private customer data.
 - One Google Cloud product and one Gemini API call remain in the minimal deployed proof path if the app uses LLM functionality.
+- The public demo is ready to generate local Google-ops receipts with `scripts/google_ops_runner.py` so the repo stays judge-reproducible even before live credentials are wired.
+- The Doc Strange adversarial loop is available in `scripts/doc_strange_adversarial_loop.py` and must stay green before any promotion decision.
+- The public demo also exposes the five-pillar progression and the grant-fit ladder so the user-facing product story stays aligned with law-enforcement wellness funding requirements.
+
+## Fresh Start And Provenance
+
+This is a fresh contest submission, not a dump of the full private Mosaic archive.
+
+- Any pre-existing work is referenced explicitly in `docs/preexisting-work-disclosure.md`.
+- Only the contest-safe subset is included here.
+- Proprietary methods, trade secrets, patent-sensitive details, and private internal artifacts remain outside the public repo.
+- Any strategic decisions in this repo should be red-teamed through the dogfood / Doc Strange adversarial loop before promotion.
 
 ## Funding and Pilot Model
 

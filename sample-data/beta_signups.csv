@@ -1,0 +1,4 @@
+lead_id,name,email,role,organization_type,source_channel,beta_consent,pilot_interest,notes
+beta-001,Demo User One,demo1@example.com,law_enforcement,agency,linkedin,true,true,"Wants a 14-day beta and a department pilot if staff engagement is strong."
+beta-002,Demo User Two,demo2@example.com,first_responder,individual,linkedin,true,false,"Interested in stress and sleep support; may share with peers."
+beta-003,Demo User Three,demo3@example.com,veteran,individual,referral,true,true,"Open to beta and wants a pilot summary to take to a wellness lead."

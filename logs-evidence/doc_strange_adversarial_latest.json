@@ -1,0 +1,21 @@
+{
+  "evidence": {
+    "dogfood_best_action": "sell_pilot",
+    "google_ops_status": "green",
+    "preflight_status": "yellow",
+    "xprize_focus": null
+  },
+  "generated_at": "2026-05-26T21:40:09.338904+00:00",
+  "hard_truth": "The only gate that can still block a green overall XPRIZE status is revenue; Google Cloud and Gemini are already supported by local evidence.",
+  "next_move": "sell_pilot",
+  "public_boundary": {
+    "contest_safe_public_repo": true,
+    "fresh_start_disclosure_present": true,
+    "proprietary_ip_protected": true
+  },
+  "risks": [
+    "revenue_gate_blocked"
+  ],
+  "schema": "guardian_mosaic.doc_strange_adversarial.v1",
+  "status": "yellow"
+}

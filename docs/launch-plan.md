@@ -8,11 +8,14 @@ Launch a contest-safe public demo and a sellable first-responder pilot with the 
 
 - Build locally and in Workspace first.
 - Keep the public repo sanitized and contest-safe.
+- Treat the submission as a fresh XPRIZE entry; reference any prior work explicitly and only at a high level.
 - Use existing Google subscriptions and owned Google data before any new spend.
 - Sell one paid pilot before overbuilding.
 - Use Google Cloud and Gemini only for the minimum deployed proof path.
 - Enforce hard budget gates, quota limits, and deny-by-default behavior.
 - Keep the current XPRIZE build in the wellness lane; move SaMD/PCCP work to a separate private roadmap later.
+- Show the five-pillar progression in the app, but only unlock phase-one wellness functions publicly: enhanced Flow access and foundational purpose / transcendence support.
+- Use `docs/sensorium-interfaces.md` as the canonical list of allowed biometric device families and signal classes for the wellness routing layer.
 
 ## Recommended Offer
 
@@ -67,6 +70,7 @@ Suggested pricing:
 - Do not use LLMs for sensitive health data or clinical claims
 - Keep WGS, routine labs, and methylation out of the public demo unless a separate research cohort is approved
 - Use biometrics and self-report as the default daily routing layer
+- Align the pilot offer to the law-enforcement wellness grant bar and exceed it with daily check-ins, aggregate reporting, human review, and evidence export.
 
 ## Evidence To Capture
 
@@ -90,3 +94,4 @@ Package the first small paid pilot and produce the public proof bundle:
 - pilot evidence
 - revenue evidence
 - minimal deployment record
+- explicit pre-existing-work disclosure

@@ -12,6 +12,10 @@ The current submission is a wellness-safe, contest-facing product:
 
 This is the only path that belongs in the public GitHub submission.
 
+## Provenance Note
+
+This repo references prior private Mosaic work only at a high level. Any detailed regulated or proprietary implementation stays outside the public contest bundle.
+
 ## Future Private Track
 
 Any later regulated product version should be treated as a separate private effort:

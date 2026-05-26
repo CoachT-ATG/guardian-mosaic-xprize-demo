@@ -14,8 +14,7 @@
   },
   "redactions": {
     "pii": true,
-    "secret_keys": true,
+    "api_credentials_redacted": true,
     "private_telemetry": true
   }
 }
-

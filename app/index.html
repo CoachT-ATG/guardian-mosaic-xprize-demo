@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>Guardian Mosaic - Responder Coherence Operator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">ATG Responder Coherence Operator</p>
+      <h1>Guardian Mosaic</h1>
+    </div>
+    <div class="status-pill" id="statusPill">Local demo ready</div>
+  </header>
+
+  <main class="layout">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">Contest-safe wellness / pilot intake</p>
+        <h2>Daily resilience briefs, pilot lead capture, and sponsor reporting in one local app.</h2>
+        <p class="lede">
+          This is the judge-facing surface for the XPRIZE submission. It stays inside the wellness lane,
+          uses sample Google Workspace data locally, and exports evidence bundles for the contest packet.
+        </p>
+      </div>
+      <div class="hero-grid">
+        <div class="metric">
+          <span>Sample users</span>
+          <strong id="sampleUsers">0</strong>
+        </div>
+        <div class="metric">
+          <span>Check-ins</span>
+          <strong id="sampleCheckins">0</strong>
+        </div>
+        <div class="metric">
+          <span>Pilot leads</span>
+          <strong id="pilotLeads">0</strong>
+        </div>
+        <div class="metric">
+          <span>Beta signups</span>
+          <strong id="betaSignups">0</strong>
+        </div>
+        <div class="metric">
+          <span>Evidence files</span>
+          <strong id="evidenceFiles">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h3>Five-Pillar Progression</h3>
+        <p>Phase one is the public wellness wedge; later pillars remain private until a separate governed track exists.</p>
+      </div>
+      <div id="pillarRail" class="pillar-rail"></div>
+      <div class="grant-callout">
+        <strong>Grant fit:</strong> LEMHWA, VALOR, JMHCP-adjacent collaboration, NIJ safety / health / wellness priorities, and state or local wellness grants all require measurable outcomes, privacy discipline, training, and implementation planning. This MVP exceeds that bar with daily check-ins, aggregate reporting, a human review queue, and evidence export.
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h3>Sensorium Interfaces</h3>
+        <p>Trend-only biometric inputs from commercially available devices, normalized for wellness routing.</p>
+      </div>
+      <div id="sensoriumRail" class="sensorium-rail"></div>
+      <p class="sensorium-note">
+        These signals are used for resilience routing and aggregate reporting only. They are not diagnosis, treatment, or fitness-for-duty inputs.
+      </p>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <div class="section-heading">
+          <h3>Daily Check-In</h3>
+          <p>Fast self-report inputs for the wellness routing layer.</p>
+        </div>
+        <form id="checkinForm" class="form">
+          <label>
+            Role
+            <select name="role" required>
+              <option value="law_enforcement">Law enforcement</option>
+              <option value="fire_ems">Fire / EMS</option>
+              <option value="dispatch">Dispatch</option>
+              <option value="academy">Academy</option>
+            </select>
+          </label>
+          <label>
+            Mood score
+            <input name="mood" type="range" min="1" max="10" value="6">
+          </label>
+          <label>
+            Sleep hours
+            <input name="sleep" type="number" min="0" max="12" step="0.5" value="5.5">
+          </label>
+          <label>
+            Stress score
+            <input name="stress" type="range" min="1" max="10" value="7">
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Short shift note or goal for the day"></textarea>
+          </label>
+          <button type="submit" class="primary">Generate coherence brief</button>
+        </form>
+        <div id="briefOutput" class="output card inset">
+          <p class="empty">Submit a check-in to generate a brief.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <h3>Beta Signup</h3>
+          <p>Capture LinkedIn traffic into a measurable iOS beta pipeline.</p>
+        </div>
+        <form id="betaForm" class="form">
+          <label>
+            Full name
+            <input name="name" type="text" placeholder="Alex Responder" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="beta@example.com" required>
+          </label>
+          <label>
+            Role
+            <select name="role" required>
+              <option value="law_enforcement">Law enforcement</option>
+              <option value="fire_ems">Fire / EMS</option>
+              <option value="military">Military</option>
+              <option value="veteran">Veteran</option>
+              <option value="first_responder">First responder</option>
+            </select>
+          </label>
+          <label>
+            Organization type
+            <select name="organization_type" required>
+              <option value="individual">Individual</option>
+              <option value="agency">Agency</option>
+              <option value="union">Union / association</option>
+              <option value="nonprofit">Nonprofit / peer-support</option>
+            </select>
+          </label>
+          <label>
+            Source channel
+            <select name="source_channel" required>
+              <option value="linkedin">LinkedIn</option>
+              <option value="referral">Referral</option>
+              <option value="email">Email</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label class="checkbox">
+            <input name="beta_consent" type="checkbox" required>
+            I want the 14-day wellness beta and understand it is not diagnosis, treatment, or fitness-for-duty support.
+          </label>
+          <label class="checkbox">
+            <input name="pilot_interest" type="checkbox">
+            I’m also open to a pilot conversation after the beta.
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="Why this beta matters to you"></textarea>
+          </label>
+          <button type="submit" class="primary">Save beta signup</button>
+        </form>
+        <div class="pilot-actions">
+          <button id="exportFunnelBtn" class="secondary">Export funnel packet</button>
+        </div>
+        <div id="betaOutput" class="output card inset">
+          <p class="empty">No beta signup saved yet.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <h3>Agency Pilot</h3>
+          <p>Lead capture for the first paid cohort and revenue path.</p>
+        </div>
+        <form id="pilotForm" class="form">
+          <label>
+            Agency name
+            <input name="agency" type="text" placeholder="Montgomery County Wellness Unit" required>
+          </label>
+          <label>
+            Contact email
+            <input name="email" type="email" placeholder="lead@example.gov" required>
+          </label>
+          <label>
+            Seats
+            <select name="seats">
+              <option>10</option>
+              <option>25</option>
+              <option>50</option>
+            </select>
+          </label>
+          <label>
+            Pilot goal
+            <textarea name="goal" rows="4" placeholder="What problem should the pilot solve?"></textarea>
+          </label>
+          <button type="submit" class="primary">Save pilot lead</button>
+        </form>
+        <div class="pilot-actions">
+          <button id="exportBtn" class="secondary">Export evidence bundle</button>
+          <button id="copyEmailBtn" class="secondary">Copy pilot email</button>
+        </div>
+        <div id="leadOutput" class="output card inset">
+          <p class="empty">No pilot lead saved yet.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h3>Agency Dashboard</h3>
+        <p>Aggregate-only sponsor view, with no private health disclosure.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Agency</th>
+              <th>Active users</th>
+              <th>Check-ins</th>
+              <th>Retention</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody id="agencyTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h3>Google / Gemini Proof Path</h3>
+        <p>Local evidence first, then the minimum deployed proof path.</p>
+      </div>
+      <ul class="bullets">
+        <li>Google Workspace sample data and workflow configuration are present.</li>
+        <li>Contest-safe Gemini payload example is included for deployed-call wiring.</li>
+        <li>Fresh-start disclosure and prior-work boundary are explicit in GitHub.</li>
+        <li>Revenue remains the only blocked XPRIZE gate until a paid receipt exists.</li>
+      </ul>
+      <pre id="proofJson" class="codeblock"></pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

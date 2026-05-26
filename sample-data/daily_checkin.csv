@@ -1,0 +1,4 @@
+user_id,role,mood_score,sleep_hours,stress_score,notes
+demo-user-001,law_enforcement,6,5.5,8,"Rough shift, short sleep, need to reset before next tour."
+demo-user-002,fire_ems,7,6.5,5,"Stable day, moderate load, ready for a light flow block."
+demo-user-003,dispatch,5,4.5,9,"High call volume, fatigue, use recovery-first guidance."

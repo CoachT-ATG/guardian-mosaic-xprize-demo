@@ -5,8 +5,9 @@ build/
 *.log
 *.tmp
 *.swp
+__pycache__/
+*.pyc
 .env
 .env.*
 secrets/
 private/
-
